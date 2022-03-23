@@ -14,6 +14,7 @@ int main()
     sequence = (int *)malloc(fibonacciLength * sizeof(int));
     calculateFibonacciSequence(fibonacciLength, sequence);
     printFibonacciSequence(fibonacciLength, sequence);
+    free(sequence);
     return 0;
 }
 
